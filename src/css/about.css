@@ -1,0 +1,644 @@
+/* Open Sans FONT LINK   */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: thinF;
+  src: url("/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: semiBoldF;
+  src: url("/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: regularF;
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: mediumF;
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: lightF;
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: extraF;
+  src: url("/fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: boldF;
+  src: url("/fonts/Montserrat-Bold.ttf");
+}
+
+:root {
+  font-size: 14px;
+  --color-text: #fff;
+  --color-bg: #0b0826;
+  --color-bg-alt: hsl(222.55deg 100% 49.22%);
+  --color-link: #fff;
+  --color-link-hover: #fff;
+  --color-title: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  font-family: regularF;
+}
+
+.cursor-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 10;
+  height: 3vw;
+  pointer-events: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  height: 100vh;
+  width: 40%;
+  padding: 2vw 2.4vw;
+  padding-bottom: 4vw;
+  z-index: 9;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-left {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #6d6d6d;
+  padding-top: 4vw;
+}
+
+.menu-elem {
+  height: 2vw;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.menu-elem > h1 {
+  position: relative;
+  font-size: 2vw;
+  line-height: 1;
+  font-weight: 500;
+  /* transition: all ease 0.2s; */
+}
+
+.menu-elem > h1:hover {
+  color: #ce4141;
+}
+
+.menu-right-socials {
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: 4vw;
+}
+
+.menu-right {
+  position: relative;
+  height: 100%;
+  color: #ce4141;
+}
+
+.menu-right > i {
+  font-size: 2vw;
+}
+
+.media {
+  display: flex;
+  gap: 1vw;
+}
+
+.media i {
+  font-size: 1.4vw;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: 1vw;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: 1vw;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  padding: 1vw 10.4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  z-index: 3;
+}
+
+nav > img {
+  position: relative;
+  height: 4vw;
+  object-fit: cover;
+}
+
+.nav-right {
+  position: relative;
+  display: flex;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.menu-close {
+  cursor: pointer;
+}
+
+.nav-right i {
+  font-size: 1.2vw;
+}
+
+.page1-videos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page1-videos-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0000006e;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page1-videos > video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page1-text {
+  position: relative;
+  padding: 1vw 10.4vw;
+  z-index: 2;
+  color: #fff;
+  margin-top: 10vw;
+}
+
+.page1-text h1 {
+  font-size: 3.5vw;
+  line-height: 1.4;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ffffff43;
+}
+
+.page1-text button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1vw;
+  margin-top: 3vw;
+  font-weight: 100;
+  padding: 0.6vw 1.2vw;
+  border-radius: 1vw;
+  transition: all ease 0.4s;
+  overflow: hidden;
+}
+
+.page1-text button:hover {
+  color: #fff;
+}
+
+.page1-text button::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 1vw;
+  width: 100%;
+  height: 100%;
+  background-color: #ce4141;
+  z-index: -1;
+  transition: all ease 0.3s;
+}
+
+.page1-text button:hover::after {
+  top: 0;
+}
+
+.text-fill {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10.4vw;
+}
+
+.text-fill > h1 {
+  font-weight: 500;
+  font-size: 1.9vw;
+  line-height: 2;
+  color: #0000003d;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 2vw 10.4vw;
+}
+
+.footer-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: #ce4141;
+}
+
+.footer-top > img {
+  height: 3vw;
+  object-fit: cover;
+}
+
+.footer-top-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top-right i {
+  font-size: 1.3vw;
+  margin-left: 1vw;
+}
+
+.footer-top-right p {
+  margin-left: 1vw;
+}
+
+.footer-line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ce4141;
+  margin-top: 2vw;
+}
+
+.footer-bottom {
+  position: relative;
+  margin-top: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom > p {
+  color: #2f2f2f;
+}
+
+.footer-bottom-right {
+  position: relative;
+  display: flex;
+  gap: 2.5vw;
+}
+
+.footer-bottom a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.content-wrap {
+  display: grid;
+  gap: 40vh;
+}
+
+.content {
+  flex: none;
+  display: grid;
+  place-items: center;
+  line-height: 1.2;
+  grid-template-areas: "title" "layout" "...";
+  grid-template-rows: 3.5vw auto 3.5vw;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.content--intro {
+  grid-area: intro;
+}
+
+.content__img-wrap {
+  grid-area: layout;
+}
+
+.content__img {
+  --img-width: 60vw;
+  --img-height: 40vh;
+  --img-ar: auto;
+  --img-inner-margin-x: 0px;
+  --img-inner-margin-y: 0px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  width: var(--img-width);
+  height: var(--img-height);
+  aspect-ratio: var(--img-ar);
+}
+
+.content__img--1 {
+  --img-width: 70vw;
+  --img-height: auto;
+  --img-ar: 16/8;
+}
+
+.content__img--2 {
+  --img-width: 100vw;
+  --img-height: 100vh;
+}
+
+.content__img--3 {
+  --img-width: 100vw;
+  --img-height: 200vh;
+}
+
+.content__img--4 {
+  --img-width: 40vw;
+  --img-height: auto;
+  --img-ar: 0.8;
+}
+
+.content__img--5 {
+  --img-width: 60vw;
+  --img-height: auto;
+  --img-ar: 1;
+}
+
+.content__img--6 {
+  --img-width: 70vw;
+  --img-height: auto;
+  --img-ar: 16/8;
+}
+
+.content__img-inner {
+  grid-area: 1 / -1;
+  width: calc(100% + var(--img-inner-margin-x) * 2);
+  height: calc(100% + var(--img-inner-margin-y) * 2);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.content__img-inner--hidden {
+  opacity: 0;
+}
+
+.content__text {
+  position: relative;
+  z-index: 100;
+  grid-area: title;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.content__text span span {
+  display: inline-block;
+}
+
+.content__text span span.whitespace {
+  white-space: pre;
+}
+
+.content__text span:nth-child(3n) {
+  font-feature-settings: "ss01" 1;
+}
+
+.content__text--large {
+  font-size: clamp(2rem, 7vw, 6rem);
+}
+
+.content__text--center {
+  text-align: center;
+  align-self: stretch;
+  justify-content: space-between;
+  grid-row: 1 / span 3;
+}
+
+.content__text--left {
+  justify-self: start;
+  padding: 3rem;
+  grid-area: layout;
+  align-self: center;
+  font-size: 4vw;
+}
+
+.content__text-tiny {
+  text-transform: none;
+  font-family: "Tenon", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  max-width: 600px;
+  line-height: 1.2;
+  margin-top: 4vh;
+}
+
+.reality {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2vw 10.4vw;
+}
+
+.reality > h1 {
+  font-size: 4vw;
+}
+
+.reality-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vw;
+}
+
+.reality-left {
+  position: relative;
+  width: 48%;
+}
+
+.reality-left > h3 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.reality-right {
+  position: relative;
+  width: 48%;
+}
+
+.reality-right > p {
+  font-size: 1.1vw;
+  line-height: 1.5;
+}
+
+.reality-elems {
+  position: relative;
+  margin-top: 8vw;
+}
+
+.reality-elem {
+  position: relative;
+  margin-top: 1.5vw;
+  height: 2vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.reality-elem-heading {
+  position: relative;
+  width: 100%;
+  transition: all ease 0.3;
+  overflow: hidden;
+}
+
+.reality-elem-heading:hover {
+  color: #fff;
+}
+
+.reality-elem-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ce4141;
+  z-index: -1;
+  transition: all ease 0.3s;
+  overflow: hidden;
+}
+
+.reality-elem-heading:hover::after {
+  top: 0;
+}
+
+.reality-elem-heading > h1 {
+  font-size: 1.8vw;
+  font-weight: 400;
+}
+
+.reality-elem > p {
+  font-size: 1vw;
+  width: 85%;
+  margin-top: 1vw;
+}
+
+.teams {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 2vw 10.4vw;
+  padding-top: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teams-left {
+  position: relative;
+  width: 48%;
+  height: 100%;
+}
+
+.teams-left > h1 {
+  position: relative;
+  font-size: 6vw;
+}
+
+.teams-left > p {
+  position: relative;
+  font-size: 1.3vw;
+  line-height: 1.5;
+  margin-top: 1.5vw;
+}
+
+.teams-right {
+  position: relative;
+  width: 48%;
+  height: 100%;
+}
+
+.teams-right > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
