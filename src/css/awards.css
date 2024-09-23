@@ -181,6 +181,7 @@ nav > img {
   justify-content: center;
   align-items: center;
   gap: 4vw;
+  padding-top: 4vw;
 }
 
 .brands1 {

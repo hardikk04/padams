@@ -63,6 +63,36 @@ const lenisJs = () => {
 };
 lenisJs();
 
+window.addEventListener("DOMContentLoaded", () => {
+  gsap.to(".main-loader", {
+    opacity: 0,
+    onComplete: () => {
+      gsap.to(".main-loader", {
+        zIndex: -10,
+      });
+    },
+  });
+});
+
+const search = () => {
+  const openSearch = document.querySelector(".search-open");
+  const closeSearch = document.querySelector(".search-close");
+
+  openSearch.addEventListener("click", () => {
+    const tl = gsap.timeline();
+    tl.to(".search", {
+      top: "0",
+    });
+  });
+  closeSearch.addEventListener("click", () => {
+    const tl = gsap.timeline();
+    tl.to(".search", {
+      top: "-30%",
+    });
+  });
+};
+search();
+
 const menu = () => {
   const allMenuElem = document.querySelectorAll(".menu-elem");
   allMenuElem.forEach((elem, index) => {
@@ -95,8 +125,12 @@ const menu = () => {
         gsap.to(".menu-elem7>h1", {
           y: -40,
         });
-      } else {
+      } else if (index === 7) {
         gsap.to(".menu-elem8>h1", {
+          y: -40,
+        });
+      } else {
+        gsap.to(".menu-elem9>h1", {
           y: -40,
         });
       }
@@ -225,16 +259,20 @@ const expertiseAnimation = () => {
       left: "150%",
       rotate: "-10deg",
     })
-    .from(".expertise-card4", {
+    .from(".expertise-card6", {
       left: "-100%",
+      rotate: "-10deg",
+    })
+    .from(".expertise-card4", {
+      left: "150%",
       rotate: "10deg",
     })
     .from(".expertise-card3", {
-      left: "150%",
+      left: "-100%",
       rotate: "-10deg",
     })
     .from(".expertise-card5", {
-      left: "-100%",
+      left: "150%",
       rotate: "10deg",
     });
 };
@@ -434,6 +472,55 @@ const counterSection = () => {
 counterSection();
 
 const allSlidersSwitch = () => {
+  const video = document.querySelector("video");
+  let videoNumber = 0;
+
+  video.addEventListener("ended", () => {
+    if (videoNumber === 0) {
+      document.querySelector(".home-video").src = "/videos/google cut (1).mp4";
+
+      allSliders[0].style.backgroundColor = "#dfdfdf5f";
+      allSliders[1].style.backgroundColor = "#dfdfdfec";
+      allSliders[2].style.backgroundColor = "#dfdfdf5f";
+      allSliders[3].style.backgroundColor = "#dfdfdf5f";
+      document.querySelector(".page1-text").style.opacity = 1;
+
+      videoNumber = 1;
+    } else if (videoNumber === 1) {
+      document.querySelector(".home-video").src =
+        "/videos/padams factory (1).mp4";
+
+      allSliders[0].style.backgroundColor = "#dfdfdf5f";
+      allSliders[1].style.backgroundColor = "#dfdfdf5f";
+      allSliders[2].style.backgroundColor = "#dfdfdfec";
+      allSliders[3].style.backgroundColor = "#dfdfdf5f";
+      document.querySelector(".page1-text").style.opacity = 1;
+
+      videoNumber = 2;
+    } else if (videoNumber === 2) {
+      document.querySelector(".home-video").src = "/videos/barclays cut.mp4";
+
+      allSliders[0].style.backgroundColor = "#dfdfdf5f";
+      allSliders[1].style.backgroundColor = "#dfdfdf5f";
+      allSliders[2].style.backgroundColor = "#dfdfdf5f";
+      allSliders[3].style.backgroundColor = "#dfdfdfec";
+      document.querySelector(".page1-text").style.opacity = 0;
+
+      videoNumber = 3;
+    } else {
+      document.querySelector(".home-video").src =
+        "/videos/padam samarak cut.mp4";
+
+      allSliders[0].style.backgroundColor = "#dfdfdfec";
+      allSliders[1].style.backgroundColor = "#dfdfdf5f";
+      allSliders[2].style.backgroundColor = "#dfdfdf5f";
+      allSliders[3].style.backgroundColor = "#dfdfdf5f";
+      document.querySelector(".page1-text").style.opacity = 1;
+
+      videoNumber = 0;
+    }
+  });
+
   const allSliders = document.querySelectorAll(".page1-sliders-tab");
   allSliders.forEach((slider, index) => {
     slider.addEventListener("click", () => {
@@ -445,33 +532,20 @@ const allSlidersSwitch = () => {
         allSliders[1].style.backgroundColor = "#dfdfdf5f";
         allSliders[2].style.backgroundColor = "#dfdfdf5f";
         allSliders[3].style.backgroundColor = "#dfdfdf5f";
+        document.querySelector(".page1-text").style.opacity = 1;
 
-        // gsap.to(".page1-sliders-overlay", {
-        //   left: "-100%",
-        //   duration: 1,
-        //   onComplete: () => {
-        //     gsap.set(".page1-sliders-overlay", {
-        //       left: "100%",
-        //     });
-        //   },
-        // });
+        videoNumber = 0;
       } else if (index === 1) {
-        document.querySelector(".home-video").src = "/videos/barclays cut.mp4";
+        document.querySelector(".home-video").src =
+          "/videos/google cut (1).mp4";
 
         allSliders[0].style.backgroundColor = "#dfdfdf5f";
         allSliders[index].style.backgroundColor = "#dfdfdfec";
         allSliders[2].style.backgroundColor = "#dfdfdf5f";
         allSliders[3].style.backgroundColor = "#dfdfdf5f";
+        document.querySelector(".page1-text").style.opacity = 1;
 
-        // gsap.to(".page1-sliders-overlay", {
-        //   left: "-100%",
-        //   duration: 1,
-        //   onComplete: () => {
-        //     gsap.set(".page1-sliders-overlay", {
-        //       left: "100%",
-        //     });
-        //   },
-        // });
+        videoNumber = 1;
       } else if (index === 2) {
         document.querySelector(".home-video").src =
           "/videos/padams factory (1).mp4";
@@ -480,34 +554,19 @@ const allSlidersSwitch = () => {
         allSliders[1].style.backgroundColor = "#dfdfdf5f";
         allSliders[index].style.backgroundColor = "#dfdfdfec";
         allSliders[3].style.backgroundColor = "#dfdfdf5f";
+        document.querySelector(".page1-text").style.opacity = 1;
 
-        // gsap.to(".page1-sliders-overlay", {
-        //   left: "-100%",
-        //   duration: 1,
-        //   onComplete: () => {
-        //     gsap.set(".page1-sliders-overlay", {
-        //       left: "100%",
-        //     });
-        //   },
-        // });
+        videoNumber = 2;
       } else {
-        document.querySelector(".home-video").src =
-          "/videos/google cut (1).mp4";
+        document.querySelector(".home-video").src = "/videos/barclays cut.mp4";
 
         allSliders[0].style.backgroundColor = "#dfdfdf5f";
         allSliders[1].style.backgroundColor = "#dfdfdf5f";
         allSliders[2].style.backgroundColor = "#dfdfdf5f";
         allSliders[index].style.backgroundColor = "#dfdfdfec";
+        document.querySelector(".page1-text").style.opacity = 0;
 
-        // gsap.to(".page1-sliders-overlay", {
-        //   left: "-100%",
-        //   duration: 1,
-        //   onComplete: () => {
-        //     gsap.set(".page1-sliders-overlay", {
-        //       left: "100%",
-        //     });
-        //   },
-        // });
+        videoNumber = 3;
       }
     });
   });

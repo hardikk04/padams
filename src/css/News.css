@@ -242,6 +242,8 @@
   color: #ffffff;
 }
 
+
+
 .menu {
   position: absolute;
   top: 0%;
@@ -254,6 +256,11 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
 }
 
 .menu-left {
@@ -299,6 +306,14 @@
   color: #ce4141;
 }
 
+.menu i {
+  cursor: pointer;
+}
+
+.menu i:hover {
+  color: #ce4141;
+}
+
 .menu-right > i {
   font-size: 2vw;
 }
@@ -319,12 +334,25 @@
   margin-top: 1vw;
 }
 
+.email p {
+  margin-top: 1vw;
+}
+
+.menu a:hover {
+  color: #ce4141;
+}
+
+.email i {
+  font-size: 1vw;
+}
+
 .phone {
   display: flex;
   align-items: center;
   gap: 0.5vw;
   margin-top: 1vw;
 }
+
 
 nav {
   position: relative;

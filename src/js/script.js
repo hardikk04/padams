@@ -1,5 +1,3 @@
-import "remixicon/fonts/remixicon.css";
-
 const menu = () => {
   const allMenuElem = document.querySelectorAll(".menu-elem");
   allMenuElem.forEach((elem, index) => {
@@ -87,7 +85,7 @@ const page7Animation = () => {
   tl.to(".page7-elem", {
     width: "24%",
     stagger: 0.1,
-    backgroundColor: "#e2ffdf",
+    backgroundColor: "#e2dec4",
     color: "#07003f",
   });
 };

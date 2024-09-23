@@ -20,7 +20,6 @@ a {
   color: initial;
 }
 
-
 .inline-block {
   display: inline-block;
 }
@@ -227,6 +226,33 @@ nav {
   padding-top: 4vw;
 }
 
+.page2-line {
+  position: absolute;
+  left: 5%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bababa;
+}
+
+.page2-line-inner {
+  position: relative;
+  height: 0;
+  background-color: #ce4141;
+  width: 100%;
+}
+
+.page2-circle {
+  position: relative;
+  height: 1.5vh;
+  width: 1.5vh;
+  background-color: #ce4141;
+  border-radius: 50%;
+}
+
 .card {
   position: relative;
   height: 100vh;
@@ -337,4 +363,177 @@ nav {
 .footer-bottom a {
   color: #2f2f2f;
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .nav-right i {
+    font-size: 1.8vw;
+  }
+
+  .page1-text button {
+    font-size: 1.6vw;
+  }
+
+  .expertise-card-overlay > h1 {
+    font-size: 4vw;
+    font-weight: 500;
+  }
+
+  .page3-card-left > p {
+    font-size: 1.2vw;
+  }
+
+  .stay-update > h1 {
+    font-size: 1.4vw;
+  }
+
+  .insights-right > p {
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-right i {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page1-text h1 {
+    font-size: 4vw;
+    margin-top: -2vw;
+  }
+  .page1-text p {
+    font-size: 1.6vw;
+  }
+
+  .page2 {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  .card-heading > h1 {
+    font-size: 4vw;
+  }
+
+  .card > p {
+    font-size: 1.6vw;
+  }
+
+  .footer {
+    padding-top: 10vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-right i {
+    font-size: 2.6vw;
+  }
+
+  .footer-top-right i {
+    font-size: 2.3vw;
+  }
+  .footer-bottom > p {
+    font-size: 1.2vw;
+  }
+
+  .footer-bottom a {
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1-scroller {
+    display: none;
+  }
+
+  .page1 {
+    height: 50vh;
+  }
+  nav {
+    padding: 2vw;
+  }
+
+  .nav-right i {
+    font-size: 4vw;
+  }
+
+  .menu {
+    height: 100%;
+  }
+
+  .menu-elem {
+    height: 3vw;
+  }
+
+  .menu-elem > h1 {
+    font-size: 3vw;
+  }
+
+  .menu-right-socials {
+    display: block;
+  }
+
+  .email p {
+    font-size: 3vw;
+  }
+
+  .media i {
+    font-size: 2.4vw;
+  }
+
+  .card {
+    height: 30vh;
+    padding-right: 2vw;
+    padding-left: 12vw;
+  }
+
+  .footer {
+    padding: 2vw;
+    padding-top: 6vw;
+  }
+
+  .footer-top > img {
+    height: 8vw;
+  }
+
+  .footer-top-right i {
+    font-size: 4.3vw;
+  }
+
+  .footer-top-right p {
+    margin-left: 1vw;
+    font-size: 2vw;
+  }
+
+  .footer-bottom > p {
+    font-size: 2.6vw;
+  }
+
+  .footer-bottom a {
+    font-size: 2.6vw;
+  }
+
+  .footer-top-right a {
+    font-size: 2vw;
+  }
+
+  .footer-top-right {
+    gap: 1vw;
+  }
+
+  .footer-top-right i {
+    font-size: 3vw;
+  }
+
+  .footer-bottom {
+    gap: 3vw;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-right > i {
+    font-size: 5vw;
+  }
 }

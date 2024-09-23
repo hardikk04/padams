@@ -122,9 +122,9 @@ const page1Animations = () => {
 };
 page1Animations();
 
-const textFillSection = () => {
-  clutterAnimation(".text-fill>h1");
+clutterAnimation(".text-fill>h1");
 
+const textFillSection = () => {
   gsap.to(".text-fill>h1>span", {
     color: "#000",
     stagger: 0.1,
@@ -139,6 +139,8 @@ const textFillSection = () => {
 };
 
 textFillSection();
+
+
 
 const codeDrop = () => {
   // Define a variable to store the Lenis smooth scrolling object

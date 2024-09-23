@@ -3,6 +3,41 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@font-face {
+  font-family: thinF;
+  src: url("/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: semiBoldF;
+  src: url("/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: regularF;
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: mediumF;
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: lightF;
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: extraF;
+  src: url("/fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: boldF;
+  src: url("/fonts/Montserrat-Bold.ttf");
+}
+
 /* UNIVERSAL CSS STARTS */
 
 * {
@@ -22,7 +57,7 @@
   --color-black: #000;
   --color-gray: #282936;
   --color-white: #fff;
-  --font-family-heading: "Open Sans", sans-serif;
+  --font-family-heading: regularF;
   --color-red: #ce4141;
   --color-light-gray: ##555555;
   --color-text: #000;
@@ -294,92 +329,6 @@ button:hover .button-text {
   }
 }
 
-/* Media Queries */
-@media (max-width: 1040px) {
-  .header {
-    padding: 12px 20px;
-  }
-
-  .home {
-    padding: 100px 20px;
-  }
-
-  .navegation.active {
-    /* display: none; */
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-  }
-
-  .navegation-items a {
-    color: var(--font-color-menu);
-    font-size: 1.2em;
-    margin: 20px;
-  }
-
-  .navegation-items a::before {
-    background: var(--font-color-menu);
-    height: 5px;
-  }
-
-  .navegation.active .navegation-items {
-    background: var(--bg-secundary);
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
-  }
-
-  .menu-btn {
-    background: url("imagens/menu.svg") no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-  }
-
-  .menu-btn.active {
-    z-index: 999;
-    background: url("imagens/close.svg") no-repeat;
-    background-size: 25px;
-    background-position: center;
-    transition: 0.3s ease;
-  }
-}
-
-/* Media queries for smartphone */
-@media screen and (max-width: 767px) {
-  .content {
-    margin-top: 40px;
-  }
-  .content h1 {
-    font-size: 2.5em;
-    line-height: 45px;
-    margin-bottom: 40px;
-  }
-
-  .content h1 span {
-    font-size: 1em;
-  }
-
-  .content p {
-    margin-bottom: 40px;
-  }
-  .slider-navegation {
-    transform: translateY(280px);
-  }
-}
-
 /* ##################### HEADER VIDEO SECTION CSS ENDS #######################3 */
 
 /* #################### home-about-us CSS STARTS ######################## */
@@ -474,81 +423,6 @@ button:hover .button-text {
   width: 20px;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1024px) {
-  .home-about-us {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-heading,
-  .about-sub-heading {
-    font-size: 35px;
-    line-height: 45px;
-  }
-
-  .padams-about-description {
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  .about-section-btn {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-about-us {
-    padding: 15px;
-  }
-
-  .about-heading {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .about-sub-heading {
-    font-size: 30px;
-    line-height: 50px;
-  }
-
-  .padams-about-description {
-    font-size: 15px;
-    line-height: 28px;
-  }
-
-  .about-section-btn {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-about-us {
-    padding: 10px;
-  }
-
-  .about-heading {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .about-sub-heading {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .padams-about-description {
-    font-size: 14px;
-    line-height: 25px;
-  }
-
-  .about-section-btn {
-    font-size: 14px;
-  }
-  .about-section-btn {
-    margin-bottom: 25px;
-  }
-}
 /* #################### home-about-us CSS ENDS ######################## */
 
 .counter-section {
@@ -591,12 +465,6 @@ button:hover .button-text {
 .counter:hover {
   color: var(--color-red);
   transform: scale(1.1);
-}
-
-@media (max-width: 580px) {
-  .counter-section {
-    flex-direction: column;
-  }
 }
 
 .learn-more {
@@ -760,68 +628,6 @@ button:hover .button-text {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media (width > 650px) and (width < 900px) {
-  .expertise-content .expertise-title {
-    font-size: 1rem;
-  }
-  .expertise-content .expertise-description {
-    font-size: 0.7rem;
-  }
-  .expertise-content button {
-    font-size: 0.7rem;
-  }
-
-  .expertise-item {
-    width: 160px;
-    height: 270px;
-  }
-
-  .expertise-item:nth-child(3) {
-    left: 50%;
-  }
-  .expertise-item:nth-child(4) {
-    left: calc(50% + 170px);
-  }
-  .expertise-item:nth-child(5) {
-    left: calc(50% + 340px);
-  }
-  .expertise-item:nth-child(6) {
-    left: calc(50% + 510px);
-    opacity: 0;
-  }
-}
-
-@media (width < 650px) {
-  .expertise-content .expertise-title {
-    font-size: 0.9rem;
-  }
-  .expertise-content .expertise-description {
-    font-size: 0.65rem;
-  }
-  .expertise-content button {
-    font-size: 0.7rem;
-  }
-
-  .expertise-item {
-    width: 130px;
-    height: 220px;
-  }
-
-  .expertise-item:nth-child(3) {
-    left: 50%;
-  }
-  .expertise-item:nth-child(4) {
-    left: calc(50% + 140px);
-  }
-  .expertise-item:nth-child(5) {
-    left: calc(50% + 280px);
-  }
-  .expertise-item:nth-child(6) {
-    left: calc(50% + 420px);
-    opacity: 0;
-  }
-}
-
 /* expertise section css ends   */
 
 /* clientele-section css starts  */
@@ -883,12 +689,6 @@ button:hover .button-text {
   gap: var(--gap);
   min-width: 100%;
   animation: scroll-x var(--duration) linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee__group {
-    animation-play-state: paused;
-  }
 }
 
 .marquee--vertical {
@@ -1946,3 +1746,74 @@ ul {
   height: auto;
 }
 /*  header ends */
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 2vw 10.4vw;
+}
+
+.footer-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: #ce4141;
+}
+
+.footer-top > img {
+  height: 3vw;
+  object-fit: cover;
+}
+
+.footer-top-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top-right a {
+  color: #ce4141;
+  text-decoration: none;
+}
+
+.footer-top-right i {
+  font-size: 1.3vw;
+  margin-left: 1vw;
+}
+
+.footer-top-right p {
+  margin-left: 1vw;
+}
+
+.footer-line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ce4141;
+  margin-top: 2vw;
+}
+
+.footer-bottom {
+  position: relative;
+  margin-top: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom > p {
+  color: #2f2f2f;
+}
+
+.footer-bottom-right {
+  position: relative;
+  display: flex;
+  gap: 2.5vw;
+}
+
+.footer-bottom a {
+  color: #2f2f2f !important;
+  text-decoration: none;
+}

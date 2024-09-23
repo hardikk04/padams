@@ -108,6 +108,7 @@ const menu = () => {
 };
 menu();
 
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const brandsAnimation = () => {
   gsap.from(".brands-img", {
@@ -117,7 +118,7 @@ const brandsAnimation = () => {
     scrollTrigger: {
       trigger: ".brands",
       start: "top 90%",
-      end: "top -20%",
+      end: "top -60%",
       scrub: true,
       // markers: true,
     },
@@ -125,23 +126,17 @@ const brandsAnimation = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".brands",
-      start: "top 90%",
-      end: "top -20%",
+      start: "top 80%",
+      end: "top -150%",
       scrub: true,
-      // markers: true,
     },
   });
-  tl.from(".brands1 > .brands-img", {
-    width: "14vw",
-  })
-    .from(".brands2 > .brands-img", {
-      width: "16vw",
-    })
-    .from(".brands3 > .brands-img", {
-      width: "16vw",
-    })
-    .from(".brands4 > .brands-img", {
-      width: "18vw",
-    });
+  tl.from(".brands-img", {
+    opacity: 0,
+    stagger: 0.1,
+  });
 };
-brandsAnimation();
+
+if (!mediaQuery.matches) {
+  brandsAnimation();
+}
