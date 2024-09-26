@@ -108,6 +108,7 @@ const menu = () => {
 };
 menu();
 
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const brandsAnimation = () => {
   gsap.from(".brands-img", {
@@ -144,4 +145,7 @@ const brandsAnimation = () => {
       width: "18vw",
     });
 };
-brandsAnimation();
+
+if (!mediaQuery.matches) {
+  brandsAnimation();
+}

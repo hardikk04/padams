@@ -1,25 +1,3 @@
-import "remixicon/fonts/remixicon.css";
-import Lenis from "lenis";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { TextPlugin } from "gsap/TextPlugin";
-
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
-
-var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  autoplay: {
-    delay: 3000,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 // Clutter Animation
 const clutterAnimation = (element) => {
   const htmlTag = document.querySelector(element);
@@ -263,7 +241,7 @@ const expertiseAnimation = () => {
       left: "-100%",
       rotate: "-10deg",
     })
-    .from(".expertise-card4", {
+    .from(".expertise-card5", {
       left: "150%",
       rotate: "10deg",
     })
@@ -271,7 +249,7 @@ const expertiseAnimation = () => {
       left: "-100%",
       rotate: "-10deg",
     })
-    .from(".expertise-card5", {
+    .from(".expertise-card4", {
       left: "150%",
       rotate: "10deg",
     });
@@ -422,12 +400,14 @@ const counterSection = () => {
   });
 
   gsap.from(".coutner-elem2>h1", {
-    text: "0 Mn+",
     scrollTrigger: {
       trigger: ".coutner-section",
       start: "top 50%",
       end: "top 50%",
       // markers: true,
+    },
+    onComplete: () => {
+      counterNumberAnimation(".coutner-elem2>h1", 600, 50, "9+ Million");
     },
   });
 

@@ -368,7 +368,11 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    background-color: salmon;
+    padding: 2vw;
+  }
+
+  .project-overlay {
+    height: 100%;
   }
 
   .menu {
@@ -386,197 +390,34 @@ nav {
   .project {
     height: 60vh;
   }
+
   .nav-right i {
     font-size: 3.2vw;
   }
 
-  .page1-text h1 {
-    font-size: 6vw;
+  .single-project-card {
+    height: 60vh;
   }
 
-  .page1-text button {
-    font-size: 2.1vw;
-  }
-
-  .text-fill > h1 {
-    font-size: 3.4vw;
-  }
-
-  .coutner-line {
-    border-left: 0px solid #000;
-  }
-
-  .coutner-section {
-    padding: 2vw;
-    justify-content: center;
-    gap: 3vw;
-    flex-wrap: wrap;
-  }
-
-  .coutner-elem {
-    width: 40%;
-  }
-
-  .coutner-elem > h3 {
-    font-size: 4vw;
-    text-align: center;
-  }
-
-  .coutner-elem > h1 {
-    font-size: 4vw;
-  }
-
-  .expertise-card-overlay > h1 {
-    font-size: 4.3vw;
-  }
-
-  .clientele-section {
-    display: flex;
-    padding: 2vw;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .expertise-card-overlay > h1 {
-    font-size: 6.3vw;
-  }
-
-  .Clientele-heading {
-    font-size: 6.5vw;
-    line-height: 1;
-    margin-bottom: 1vw;
-  }
-
-  .Clientele-main-heading {
-    font-size: 2.8vw;
-  }
-
-  .marque1 {
-    margin-top: 4vw;
-  }
-
-  .marque1 > img {
-    height: 10vw;
-    width: 12vw;
-  }
-
-  .marque2 > img {
-    height: 10vw;
-    width: 12vw;
-  }
-
-  .page3-card {
-    flex-direction: column;
-  }
-
-  .page3-card-left {
-    height: 50%;
-    width: 100%;
-    align-items: center;
-  }
-
-  .page3-card-right {
-    height: 50%;
-    width: 100%;
-  }
-
-  .page3-card-left > h1 {
-    font-size: 7vw;
-  }
-
-  .page3-card-left > p {
-    font-size: 2.6vw;
-  }
-
-  .stay-update > h1 {
-    font-size: 4vw;
-  }
-
-  .stay-update > i {
-    font-size: 3vw;
-  }
-
-  .insights {
-    padding: 2vw;
-    flex-direction: column;
-    gap: 2vw;
-  }
-
-  .insights-left {
-    flex-direction: column;
-  }
-
-  .insights-announcements {
-    width: 100%;
-    text-align: center;
-  }
-
-  .insights-left {
-    /* height: 25vh; */
-    width: 100%;
-  }
-
-  .swiper {
-    height: 8vh;
-  }
-
-  .insights-news {
-    width: 100%;
-    text-align: center;
-  }
-
-  .insights-right > p {
-    font-size: 2vw;
-  }
-
-  .insights-right {
-    width: 100%;
+  .img-container img {
     height: 20vh;
-    padding: 1vw 2vw;
-    text-align: center;
-    align-items: center;
+    object-fit: cover;
   }
 
-  .insights-email i {
-    font-size: 2vw;
+  .project-info img {
+    display: none;
   }
 
-  .insights-line {
+  .project-left-section {
+    padding-left: 10px;
+  }
+
+  .project-card-main-section {
+    justify-content: end;
+  }
+
+  .single-project-card {
     width: 100%;
-  }
-
-  .swiper-slide > p {
-    font-size: 2vw;
-  }
-
-  .insights-announcements > h1 {
-    font-size: 4vw;
-  }
-
-  .insights-news > h1 {
-    font-size: 3vw;
-    line-height: 1.4;
-  }
-
-  .insights-news > p {
-    font-size: 2.2vw;
-  }
-
-  .insights-news > a {
-    font-size: 2.6vw;
-  }
-
-  .insights-right button {
-    font-size: 2vw;
-  }
-
-  .insights-email input {
-    font-size: 2vw;
-    padding: 1vw;
-  }
-
-  .insights-email i {
-    font-size: 3vw;
   }
 
   .footer {
@@ -656,9 +497,6 @@ nav {
     height: 8vh;
     object-fit: cover;
   }
-  .page1-videos {
-    height: 100%;
-  }
 
   .nav-right i {
     font-size: 6.2vw;
@@ -666,216 +504,6 @@ nav {
 
   .nav-right {
     gap: 6vw;
-  }
-
-  .page1 {
-    height: 60vh;
-  }
-
-  .page1-text h1 {
-    font-size: 7vw;
-  }
-
-  .page1-text {
-    margin-top: 30vw;
-  }
-
-  .page1-text button {
-    font-size: 3.1vw;
-  }
-
-  .text-fill {
-    padding: 0 2vw;
-  }
-
-  .text-fill > h1 {
-    font-size: 5vw;
-  }
-
-  .coutner-line {
-    border-left: 0px solid #000;
-  }
-
-  .coutner-section {
-    padding: 2vw;
-    justify-content: center;
-    gap: 3vw;
-    flex-wrap: wrap;
-  }
-
-  .coutner-elem {
-    width: 40%;
-  }
-
-  .coutner-elem > h3 {
-    font-size: 4vw;
-    text-align: center;
-  }
-
-  .coutner-elem > h1 {
-    font-size: 4vw;
-  }
-
-  .expertise-top > h1 {
-    top: 100%;
-  }
-
-  .expertise-bottom > h1 {
-    top: 0%;
-  }
-
-  .expertise-card {
-    height: 40%;
-    width: 80%;
-  }
-
-  .clientele-section {
-    display: flex;
-    padding: 2vw;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .expertise-card-overlay > h1 {
-    font-size: 6.3vw;
-  }
-
-  .Clientele-heading {
-    font-size: 6.5vw;
-    line-height: 1;
-    margin-bottom: 1vw;
-  }
-
-  .Clientele-main-heading {
-    font-size: 2.8vw;
-  }
-
-  .marque1 {
-    margin-top: 4vw;
-  }
-
-  .marque1 > img {
-    height: 10vw;
-    width: 12vw;
-  }
-
-  .marque2 > img {
-    height: 10vw;
-    width: 12vw;
-  }
-
-  .page3-card {
-    flex-direction: column;
-  }
-
-  .page3-card-left {
-    height: 50%;
-    width: 100%;
-    align-items: center;
-  }
-
-  .page3-card-right {
-    height: 50%;
-    width: 100%;
-  }
-
-  .page3-card-left > h1 {
-    font-size: 7vw;
-  }
-
-  .page3-card-left > p {
-    font-size: 3.2vw;
-  }
-
-  .stay-update > h1 {
-    font-size: 4vw;
-  }
-
-  .stay-update > i {
-    font-size: 3vw;
-  }
-
-  .insights {
-    padding: 2vw;
-    flex-direction: column;
-    gap: 2vw;
-  }
-
-  .insights-left {
-    flex-direction: column;
-  }
-
-  .insights-announcements {
-    width: 100%;
-    text-align: center;
-  }
-
-  .insights-left {
-    /* height: 25vh; */
-    width: 100%;
-  }
-
-  .swiper {
-    height: 8vh;
-  }
-
-  .insights-news {
-    width: 100%;
-    text-align: center;
-  }
-
-  .insights-right > p {
-    font-size: 2vw;
-  }
-
-  .insights-right {
-    width: 100%;
-    height: 20vh;
-    padding: 1vw 2vw;
-    text-align: center;
-    align-items: center;
-  }
-
-  .insights-email i {
-    font-size: 2vw;
-  }
-
-  .insights-line {
-    width: 100%;
-  }
-
-  .swiper-slide > p {
-    font-size: 2vw;
-  }
-
-  .insights-announcements > h1 {
-    font-size: 4vw;
-  }
-
-  .insights-news > h1 {
-    font-size: 3vw;
-    line-height: 1.4;
-  }
-
-  .insights-news > p {
-    font-size: 2.2vw;
-  }
-
-  .insights-news > a {
-    font-size: 2.6vw;
-  }
-
-  .insights-right button {
-    font-size: 2vw;
-  }
-
-  .insights-email input {
-    font-size: 2vw;
-    padding: 1vw;
-  }
-
-  .insights-email i {
-    font-size: 3vw;
   }
 
   .footer {

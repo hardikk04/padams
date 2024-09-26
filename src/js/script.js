@@ -71,6 +71,8 @@ const menu = () => {
 };
 menu();
 
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
 const page7Animation = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -90,7 +92,16 @@ const page7Animation = () => {
   });
 };
 
-page7Animation();
+if (!mediaQuery.matches) {
+  page7Animation();
+} else {
+  gsap.to(".page7-elem", {
+    width: "24%",
+    stagger: 0.1,
+    backgroundColor: "#e2dec4",
+    color: "#07003f",
+  });
+}
 
 //JavaScript of responsive navigation menu
 

@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Padams</title>
   </head>
   <body>
@@ -121,6 +129,10 @@
               <h1 class="elem21">EXPERTISE</h1>
               <h1 class="elem23">EXPERTISE</h1>
             </a>
+            <a href="about.html" class="menu-elem menu-elem6">
+              <h1 class="elem61">ABOUT</h1>
+              <h1 class="elem62">ABOUT</h1>
+            </a>
             <a href="clientele.html" class="menu-elem menu-elem3">
               <h1 class="elem31">CLIENTELE</h1>
               <h1 class="elem32">CLIENTELE</h1>
@@ -132,10 +144,6 @@
             <a href="News.html" class="menu-elem menu-elem5">
               <h1 class="elem51">NEWS</h1>
               <h1 class="elem52">NEWS</h1>
-            </a>
-            <a href="about.html" class="menu-elem menu-elem6">
-              <h1 class="elem61">ABOUT</h1>
-              <h1 class="elem62">ABOUT</h1>
             </a>
             <a href="awards.html" class="menu-elem menu-elem7">
               <h1 class="elem71">AWARDS</h1>
@@ -179,25 +187,19 @@
                   <i title="Linkedin" class="ri-linkedin-fill"></i>
                 </a>
               </div>
-              <a href="mailto:anit@padams.in" class="email">
+              <a target="_blank" href="mailto:info@padams.in" class="email">
                 <i class="ri-mail-fill"></i>
                 <p>Info@padams.in</p>
               </a>
             </div>
-            <a
-              style="font-size: 1.2vw; margin-top: 2vw; color: #ce4141"
-              href="index.html"
-              >Return To Home</a
-            >
+            <a class="return-home" href="index.html">Return To Home</a>
           </div>
           <div class="menu-right">
             <i class="menu-close ri-close-large-fill"></i>
           </div>
         </div>
         <nav>
-          <a href="index.html">
-            <img src="/images/padam-logo 1.png" alt="" />
-          </a>
+          <img src="/images/padam-logo.png" alt="" />
           <div class="nav-right">
             <i class="search-open ri-search-line"></i>
             <i class="menu-open ri-menu-line"></i>
@@ -233,18 +235,24 @@
       </section>
       <section class="text-fill">
         <h1>
-          Founded &nbsp; in &nbsp; 1992, &nbsp; Padams &nbsp; Group &nbsp; was
-          &nbsp; established &nbsp; under &nbsp; the &nbsp; guidance &nbsp; of
-          &nbsp; Shri &nbsp; Padmaramji &nbsp; Kularia. &nbsp; Our &nbsp; build
-          &nbsp; capabilities &nbsp; are &nbsp; integral &nbsp; to transforming
-          &nbsp; design &nbsp; concepts &nbsp; into &nbsp; reality. &nbsp; Our
-          &nbsp; expertise &nbsp; in &nbsp; space planning, &nbsp; custom &nbsp;
-          furniture, &nbsp; construction, &nbsp; project &nbsp; management,
-          &nbsp; and sustainable &nbsp; practices &nbsp; ensures &nbsp; that
-          &nbsp; each &nbsp; project &nbsp; is &nbsp; completed &nbsp; to &nbsp;
-          the &nbsp; highest &nbsp; standards, &nbsp; reflecting &nbsp; the
-          &nbsp; unique &nbsp; vision &nbsp; and &nbsp; requirements &nbsp; of
-          their &nbsp; clients.
+          Established &nbsp; in &nbsp; 1992 &nbsp; under &nbsp; the &nbsp;
+          visionary &nbsp; leadership &nbsp; of &nbsp; Shri. &nbsp; Padamramji
+          &nbsp; Kularia, &nbsp; we &nbsp; have &nbsp; become &nbsp; a &nbsp;
+          leading &nbsp; provider &nbsp; of &nbsp; turnkey &nbsp; solutions
+          &nbsp; in &nbsp; the &nbsp; interior &nbsp; fit-out &nbsp; space.
+          &nbsp; Our &nbsp; success &nbsp; is &nbsp; driven &nbsp; by &nbsp; our
+          &nbsp; pioneering &nbsp; leadership &nbsp; of &nbsp; Mr. &nbsp;
+          Shankarji &nbsp; Kularia &nbsp; and &nbsp; Mr. &nbsp; Dharam &nbsp;
+          Kularia &nbsp; and &nbsp; a &nbsp; highly &nbsp; experienced &nbsp;
+          multifaceted &nbsp; team &nbsp; of &nbsp; over &nbsp; 5,000+ &nbsp;
+          professionals. &nbsp; With &nbsp; a &nbsp; track &nbsp; record &nbsp;
+          of &nbsp; delivering &nbsp; 100+ &nbsp; million &nbsp; sq. &nbsp; ft.
+          &nbsp; for &nbsp; more &nbsp; than &nbsp; 600+ &nbsp; clients, &nbsp;
+          we &nbsp; are &nbsp; committed &nbsp; to &nbsp; giving &nbsp; shape
+          &nbsp; to &nbsp; your &nbsp; vision. &nbsp; into &nbsp; reality.
+          &nbsp; Our &nbsp; superpower &nbsp; is &nbsp; “we &nbsp; concrete
+          &nbsp; your &nbsp; dreams &nbsp; into &nbsp; reality”. &nbsp;
+          #mouldthefuture
         </h1>
       </section>
       <section class="coutner-section">
@@ -254,7 +262,7 @@
         </div>
         <div class="coutner-elem coutner-line coutner-elem2">
           <h3>Sq. ft Projects Accomplished</h3>
-          <h1>1 Mn+</h1>
+          <h1>0 Mn+</h1>
         </div>
         <div class="coutner-elem coutner-line coutner-elem3">
           <h3>Team Members</h3>
@@ -266,9 +274,10 @@
         </div>
         <div class="coutner-elem coutner-line coutner-elem5">
           <h3>Years of Experience</h3>
-          <h1>30+</h1>
+          <h1>0+</h1>
         </div>
       </section>
+
       <section class="expertise">
         <div class="expertise-strip">
           <h1>
@@ -324,6 +333,7 @@
           <h1>Expertise</h1>
         </div>
       </section>
+
       <div class="clientele-section default-top-margin container">
         <div>
           <div
@@ -333,59 +343,56 @@
             data-aos-easing="ease-in-sine"
           >
             <p class="Clientele-heading">Our Clientele</p>
-            <h1 class="Clientele-main-heading">
-              Prefered choice of industry leaders
-            </h1>
           </div>
         </div>
         <div class="marque-container">
           <div class="marque1">
-            <img src="/images/client/l1.png" alt="" />
-            <img src="/images/client/l2.png" alt="" />
-            <img src="/images/client/l3.png" alt="" />
-            <img src="/images/client/l4.png" alt="" />
-            <img src="/images/client/l5.png" alt="" />
-            <img src="/images/client/l6.png" alt="" />
-            <img src="/images/client/l7.png" alt="" />
-            <img src="/images/client/l8.png" alt="" />
-            <img src="/images/client/l9.png" alt="" />
-            <img src="/images/client/l10.png" alt="" />
-            <img src="/images/client/l11.png" alt="" />
-            <img src="/images/client/l12.png" alt="" />
-            <img src="/images/client/l13.png" alt="" />
-            <img src="/images/client/l14.png" alt="" />
-            <img src="/images/client/l15.png" alt="" />
-            <img src="/images/client/l16.png" alt="" />
-            <img src="/images/client/l17.png" alt="" />
-            <img src="/images/client/l18.png" alt="" />
-            <img src="/images/client/l19.png" alt="" />
-            <img src="/images/client/l20.png" alt="" />
-            <img src="/images/client/l21.png" alt="" />
-            <img src="/images/client/l22.png" alt="" />
+            <img src="/images/client/1.png" alt="" />
+            <img src="/images/client/2.png" alt="" />
+            <img src="/images/client/3.png" alt="" />
+            <img src="/images/client/4.png" alt="" />
+            <img src="/images/client/5.png" alt="" />
+            <img src="/images/client/6.png" alt="" />
+            <img src="/images/client/7.png" alt="" />
+            <img src="/images/client/8.png" alt="" />
+            <img src="/images/client/9.png" alt="" />
+            <img src="/images/client/10.png" alt="" />
+            <img src="/images/client/11.png" alt="" />
+            <img src="/images/client/12.png" alt="" />
+            <img src="/images/client/13.png" alt="" />
+            <img src="/images/client/14.png" alt="" />
+            <img src="/images/client/15.png" alt="" />
+            <img src="/images/client/16.png" alt="" />
+            <img src="/images/client/17.png" alt="" />
+            <img src="/images/client/18.png" alt="" />
+            <img src="/images/client/19.png" alt="" />
+            <img src="/images/client/20.png" alt="" />
+            <img src="/images/client/21.png" alt="" />
+            <img src="/images/client/22.png" alt="" />
           </div>
           <div class="marque2">
-            <img src="/images/client/l1.png" alt="" />
-            <img src="/images/client/l2.png" alt="" />
-            <img src="/images/client/l3.png" alt="" />
-            <img src="/images/client/l4.png" alt="" />
-            <img src="/images/client/l5.png" alt="" />
-            <img src="/images/client/l6.png" alt="" />
-            <img src="/images/client/l7.png" alt="" />
-            <img src="/images/client/l8.png" alt="" />
-            <img src="/images/client/l9.png" alt="" />
-            <img src="/images/client/l10.png" alt="" />
-            <img src="/images/client/l11.png" alt="" />
-            <img src="/images/client/l12.png" alt="" />
-            <img src="/images/client/l13.png" alt="" />
-            <img src="/images/client/l14.png" alt="" />
-            <img src="/images/client/l15.png" alt="" />
-            <img src="/images/client/l16.png" alt="" />
-            <img src="/images/client/l17.png" alt="" />
-            <img src="/images/client/l18.png" alt="" />
-            <img src="/images/client/l19.png" alt="" />
-            <img src="/images/client/l20.png" alt="" />
-            <img src="/images/client/l21.png" alt="" />
-            <img src="/images/client/l22.png" alt="" />
+            <img src="/images/client/23.png" alt="" />
+            <img src="/images/client/24.png" alt="" />
+            <img src="/images/client/25.png" alt="" />
+            <img src="/images/client/26.png" alt="" />
+            <img src="/images/client/27.png" alt="" />
+            <img src="/images/client/28.png" alt="" />
+            <img src="/images/client/29.png" alt="" />
+            <img src="/images/client/30.png" alt="" />
+            <img src="/images/client/31.png" alt="" />
+            <img src="/images/client/32.png" alt="" />
+            <img src="/images/client/33.png" alt="" />
+            <img src="/images/client/34.png" alt="" />
+            <img src="/images/client/35.png" alt="" />
+            <img src="/images/client/36.png" alt="" />
+            <img src="/images/client/37.png" alt="" />
+            <img src="/images/client/38.png" alt="" />
+            <img src="/images/client/39.png" alt="" />
+            <img src="/images/client/30.png" alt="" />
+            <img src="/images/client/31.png" alt="" />
+            <img src="/images/client/32.png" alt="" />
+            <img src="/images/client/33.png" alt="" />
+            <img src="/images/client/34.png" alt="" />
           </div>
         </div>
       </div>
@@ -395,14 +402,21 @@
             <h1>Life @ Padams</h1>
             <p>
               We &nbsp; thrive &nbsp; in &nbsp; a &nbsp; warm, &nbsp; inclusive
-              &nbsp; atmosphere &nbsp; where &nbsp; creativity &nbsp; and
-              innovation &nbsp; flourish. &nbsp; Our &nbsp; team &nbsp; enjoys
-              &nbsp; strong &nbsp; support, &nbsp; continuous learning, &nbsp;
+              &nbsp; atmosphere &nbsp; where &nbsp; creativity &nbsp; and &nbsp;
+              innovation &nbsp; come &nbsp; alive. &nbsp; Our &nbsp; team &nbsp;
+              feels &nbsp; like &nbsp; a &nbsp; family, &nbsp; offering &nbsp;
+              strong &nbsp; support &nbsp; and &nbsp; encouragement &nbsp; as
+              &nbsp; we &nbsp; serve &nbsp; a &nbsp; vast &nbsp; clientele.
+              &nbsp; We &nbsp; embrace &nbsp; continuous &nbsp; learning &nbsp;
               and &nbsp; the &nbsp; thrill &nbsp; of &nbsp; crafting &nbsp;
-              unique, &nbsp; impactful &nbsp; spaces. &nbsp; We prioritize
-              &nbsp; work-life &nbsp; balance, &nbsp; personal &nbsp; growth,
-              &nbsp; and &nbsp; celebrating each &nbsp; other's &nbsp;
-              achievements.
+              unique, &nbsp; impactful &nbsp; spaces &nbsp; together. &nbsp;
+              With &nbsp; a &nbsp; focus &nbsp; on &nbsp; work-life &nbsp;
+              balance &nbsp; and &nbsp; personal &nbsp; growth, &nbsp; we &nbsp;
+              celebrate &nbsp; each &nbsp; others &nbsp; achievements, &nbsp;
+              and &nbsp; mentorship &nbsp; inspires &nbsp; us &nbsp; to &nbsp;
+              explore &nbsp; bold &nbsp; ideas. &nbsp; Together, &nbsp; we
+              &nbsp; create &nbsp; a &nbsp; vibrant &nbsp; community &nbsp;
+              where &nbsp; everyone’s &nbsp; voice &nbsp; matters.
             </p>
           </div>
           <div class="page3-card-right">
@@ -413,17 +427,27 @@
           <div class="page3-card-left">
             <h1>CSR</h1>
             <p>
-              At &nbsp; Padams &nbsp; Group, &nbsp; we &nbsp; believe &nbsp; in
-              &nbsp; giving &nbsp; back &nbsp; through &nbsp; Corporate Social
-              &nbsp; Responsibility &nbsp; (CSR). &nbsp; We &nbsp; support
-              &nbsp; local &nbsp; communities, &nbsp; choose sustainable &nbsp;
-              materials, &nbsp; and &nbsp; uphold &nbsp; ethical &nbsp;
-              practices. &nbsp; By volunteering, &nbsp; donating, &nbsp; and
-              &nbsp; focusing &nbsp; on &nbsp; eco-friendly &nbsp; projects,
-              &nbsp; we aim &nbsp; to &nbsp; make &nbsp; a &nbsp; positive
-              &nbsp; difference &nbsp; in &nbsp; the &nbsp; world &nbsp; and
-              &nbsp; create &nbsp; a &nbsp; better future &nbsp; for &nbsp;
-              everyone.
+              At &nbsp; Padams &nbsp; Group, &nbsp; giving &nbsp; back &nbsp; to
+              &nbsp; the &nbsp; community &nbsp; is &nbsp; truly &nbsp; at
+              &nbsp; our &nbsp; heart. &nbsp; We &nbsp; believe &nbsp; that
+              &nbsp; our &nbsp; success &nbsp; is &nbsp; tied &nbsp; to &nbsp;
+              the &nbsp; well-being &nbsp; of &nbsp; those &nbsp; around &nbsp;
+              us. &nbsp; Through &nbsp; our &nbsp; Corporate &nbsp; Social
+              &nbsp; Responsibility &nbsp; (CSR) &nbsp; initiatives, &nbsp; we
+              &nbsp; actively &nbsp; engage &nbsp; in &nbsp; local &nbsp;
+              projects &nbsp; like &nbsp; mass &nbsp; tree &nbsp; plantation
+              &nbsp; drives &nbsp; and &nbsp; donations &nbsp; to &nbsp; animal
+              &nbsp; welfare &nbsp; organizations. &nbsp; We &nbsp; also &nbsp;
+              support &nbsp; old &nbsp; age &nbsp; homes, &nbsp; contribute
+              &nbsp; to &nbsp; girls' &nbsp; schools, &nbsp; and &nbsp; create
+              &nbsp; free &nbsp; spaces &nbsp; for &nbsp; public &nbsp; and
+              &nbsp; community &nbsp; use. &nbsp; Our &nbsp; team &nbsp; is
+              &nbsp; encouraged &nbsp; to &nbsp; get &nbsp; involved, &nbsp;
+              volunteering &nbsp; their &nbsp; time &nbsp; and &nbsp; talents
+              &nbsp; to &nbsp; make &nbsp; a &nbsp; difference. &nbsp; Together,
+              &nbsp; we &nbsp; strive &nbsp; to &nbsp; make &nbsp; a &nbsp;
+              positive &nbsp; impact &nbsp; and &nbsp; uplift &nbsp; the &nbsp;
+              communities &nbsp; we &nbsp; cherish. &nbsp;
             </p>
           </div>
           <div class="page3-card-right">
@@ -434,16 +458,17 @@
           <div class="page3-card-left">
             <h1>DE&I</h1>
             <p>
-              Padams &nbsp; Group &nbsp; champions &nbsp; diversity, &nbsp;
-              equity, &nbsp; and &nbsp; inclusion &nbsp; (DE&I) &nbsp; by
-              embracing &nbsp; diverse &nbsp; perspectives, &nbsp; fostering
-              &nbsp; an &nbsp; inclusive environment, &nbsp; and &nbsp; ensuring
-              &nbsp; equitable &nbsp; opportunities &nbsp; for &nbsp; all.
-              &nbsp; We strive &nbsp; to &nbsp; create &nbsp; spaces &nbsp; that
-              &nbsp; reflect &nbsp; and &nbsp; celebrate &nbsp; the &nbsp; rich
-              diversity &nbsp; of our &nbsp; clients &nbsp; and &nbsp;
-              communities, &nbsp; promoting &nbsp; a &nbsp; culture &nbsp; of
-              respect &nbsp; and &nbsp; belonging.
+              Padam's &nbsp; Group &nbsp; champions &nbsp; Diversity, &nbsp;
+              Equality &nbsp; and &nbsp; Inclusion &nbsp; (DE&I) &nbsp; by
+              &nbsp; embracing &nbsp; diverse &nbsp; perspectives, &nbsp;
+              fostering &nbsp; an &nbsp; inclusive &nbsp; environment &nbsp; and
+              &nbsp; ensuring &nbsp; equitable &nbsp; opportunities &nbsp; for
+              &nbsp; all. &nbsp; We &nbsp; strive &nbsp; to &nbsp; create &nbsp;
+              spaces &nbsp; that &nbsp; reflect &nbsp; and &nbsp; celebrate
+              &nbsp; the &nbsp; rich &nbsp; diversity &nbsp; of &nbsp; our
+              &nbsp; clients &nbsp; and &nbsp; communities, &nbsp; promoting
+              &nbsp; a &nbsp; culture &nbsp; of &nbsp; respect &nbsp; and &nbsp;
+              belonging. &nbsp;
             </p>
           </div>
           <div class="page3-card-right">
@@ -455,14 +480,15 @@
             <h1>Sustainability</h1>
             <p>
               Padams &nbsp; Group &nbsp; is &nbsp; committed &nbsp; to &nbsp;
-              sustainability &nbsp; by &nbsp; incorporating eco-friendly &nbsp;
-              materials, &nbsp; energy-efficient &nbsp; solutions, &nbsp; and
-              sustainable &nbsp; practices. &nbsp; We &nbsp; prioritize &nbsp;
-              reducing &nbsp; environmental &nbsp; impact through &nbsp;
-              innovative &nbsp; designs, &nbsp; mindful &nbsp; sourcing, &nbsp;
-              and &nbsp; green construction &nbsp; methods, &nbsp; ensuring
-              &nbsp; beautiful, &nbsp; functional &nbsp; spaces &nbsp; that are
-              &nbsp; also &nbsp; environmentally &nbsp; responsible.
+              sustainability &nbsp; by &nbsp; incorporating &nbsp; eco-friendly
+              &nbsp; materials, &nbsp; energy-efficient &nbsp; solutions &nbsp;
+              and &nbsp; sustainable &nbsp; practices. &nbsp; We &nbsp;
+              prioritize &nbsp; reducing &nbsp; environmental &nbsp; impact
+              &nbsp; through &nbsp; innovative &nbsp; designs, &nbsp; mindful
+              &nbsp; sourcing, &nbsp; and &nbsp; green &nbsp; construction
+              &nbsp; methods, &nbsp; ensuring &nbsp; beautiful, &nbsp;
+              functional &nbsp; spaces &nbsp; that &nbsp; are &nbsp; also &nbsp;
+              environmentally &nbsp; responsible.
             </p>
           </div>
           <div class="page3-card-right">
@@ -562,27 +588,34 @@
         <div class="footer-top">
           <img src="/images/padam-logo.png" alt="" />
           <div class="footer-top-right">
-            <a href="https://www.youtube.com/@padaminteriors5078">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@padaminteriors5078"
+            >
               <i title="Youtube" class="ri-youtube-fill"></i>
             </a>
-            <a href="https://www.facebook.com/padaminteriors/">
+            <a target="_blank" href="https://www.facebook.com/padaminteriors/">
               <i title="Facebook" class="ri-facebook-fill"></i>
             </a>
-            <a href="https://x.com/PadamInteriors">
+            <a target="_blank" href="https://x.com/PadamInteriors">
               <i title="X" class="ri-twitter-x-line"></i>
             </a>
-            <a href="https://www.instagram.com/padams_group/?hl=en">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/padams_group/?hl=en"
+            >
               <i title="Instagram" class="ri-instagram-line"></i>
             </a>
             <a
+              target="_blank"
               href="https://www.linkedin.com/company/padam-interiors/?originalSubdomain=in"
             >
               <i title="Linkedin" class="ri-linkedin-fill"></i>
             </a>
-            <a href="mailto:anit@padams.in">
+            <a target="_blank" href="mailto:anit@padams.in">
               <i title="Mail" class="ri-mail-fill"></i>
             </a>
-            <a href="mailto:anit@padams.in">Info@padams.in</a>
+            <a href="mailto:info@padams.in">Info@padams.in</a>
           </div>
         </div>
         <div class="footer-line"></div>
@@ -598,6 +631,26 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/js/home.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+      integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
