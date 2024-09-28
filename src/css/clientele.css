@@ -47,16 +47,35 @@ a {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #00000058;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .clientele-overlay > h1 {
+  position: relative;
+  z-index: 2;
   font-weight: 300;
   font-size: 6vw;
   color: #ffffff;
+}
+
+.clientele-overlay video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(47, 47, 47, 0.383);
 }
 
 .menu {
@@ -412,6 +431,11 @@ nav {
 
   .nav-right {
     gap: 6vw;
+  }
+
+  .brands-img {
+    height: 14vw;
+    width: 22vw;
   }
 
   .footer {

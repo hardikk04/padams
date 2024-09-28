@@ -489,6 +489,10 @@ nav {
     font-size: 4vw;
   }
 
+  .single-project-card {
+    height: fit-content;
+  }
+
   nav {
     padding: 1vw 2vw;
   }

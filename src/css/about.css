@@ -704,8 +704,6 @@ nav > img {
   object-fit: cover;
 }
 
-
-
 @media (max-width: 1200px) {
   .nav-right i {
     font-size: 2.2vw;
@@ -996,6 +994,7 @@ nav > img {
 
   .footer {
     padding: 2vw;
+    padding-top: 8vw;
   }
 
   .footer-top > img {

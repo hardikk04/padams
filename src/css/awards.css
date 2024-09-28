@@ -188,22 +188,27 @@ nav > img {
 .brands1 {
   position: relative;
   display: flex;
-  gap: 2vw;
+  gap: 12vw;
+  justify-content: center;
+  width: 100%;
 }
 
 .brands2 {
   width: 100%;
   position: relative;
   display: flex;
+  gap: 12vw;
   justify-content: center;
-  gap: 2vw;
+  width: 100%;
   margin-top: 1vw;
 }
 
 .brands3 {
   position: relative;
   display: flex;
-  gap: 2vw;
+  gap: 12vw;
+  justify-content: center;
+  width: 100%;
   margin-top: 1vw;
 }
 
@@ -212,7 +217,9 @@ nav > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 12vw;
+  justify-content: center;
+  width: 100%;
   margin-top: 1vw;
 }
 
@@ -451,6 +458,17 @@ nav > img {
 
   .brands {
     min-height: 60vh;
+    gap: 12vw;
+  }
+
+  .brand {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .brands-img > p {
+    font-size: 2vw;
   }
 
   .footer {

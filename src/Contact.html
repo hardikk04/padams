@@ -100,8 +100,8 @@
             <img src="/images/Google Mumbai/1.jpg" alt="" />
             <div class="swiper-overlay">
               <div class="swiper-dets">
-                <h1 class="city-name">Mumbai Location</h1>
-                <p class="city-address">
+                <h1 >Mumbai Location</h1>
+                <p >
                   <b>Address : </b>1101, LOTUS TRADE CENTRE,NEW LINK
                   ROAD,ANDHERI WEST, MUMBAI, Mumbai Suburban, Maharashtra,
                   400058
@@ -452,6 +452,8 @@
 
       allCities.forEach((city, index) => {
         city.addEventListener("mouseenter", () => {
+          console.log(cityAddress);
+
           cityName.innerHTML = cityData[index].name;
           cityAddress.innerHTML = cityData[index].address;
           cityImg.src = cityData[index].img;

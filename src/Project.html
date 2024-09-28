@@ -548,8 +548,6 @@
       allProjects.forEach((elem, indexx) => {
         elem.addEventListener("click", () => {
           imagesURL[indexx].forEach((url, index) => {
-            console.log(allIMG[index]);
-
             allIMG[index].src = url;
           });
           gsap.to(".img-gallery", {
