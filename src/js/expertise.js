@@ -8,13 +8,22 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY; // Amount the user has scrolled from the top
-  const windowHeight = window.innerHeight; // Viewport height
+  const windowHeight = window.innerHeight; // Viewport height (100vh)
   const fullHeight = document.documentElement.scrollHeight; // Total page height
 
-  const percentageScrolled = ((scrollTop + windowHeight) / fullHeight) * 100;
+  // Ensure scrolling starts from the second page (after 100vh)
+  const secondPageStart = windowHeight; // Height of the first page (100vh)
+  const adjustedScrollTop = scrollTop - secondPageStart;
+
+  // If the user hasn't reached the second page, the percentage scrolled is 0
+  const percentageScrolled =
+    adjustedScrollTop > 0
+      ? ((adjustedScrollTop + windowHeight) / (fullHeight - secondPageStart)) *
+        100
+      : 0;
 
   gsap.to(".page2-line-inner", {
-    height: `${percentageScrolled.toFixed(2) - 12}%`,
+    height: `${percentageScrolled.toFixed(2)}%`,
   });
 });
 

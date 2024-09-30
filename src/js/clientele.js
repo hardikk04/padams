@@ -126,8 +126,8 @@ const brandsAnimation = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".brands",
-      start: "top 80%",
-      end: "top -150%",
+      start: "top 100%",
+      end: "top -520%",
       scrub: true,
     },
   });
