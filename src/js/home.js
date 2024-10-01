@@ -27,19 +27,19 @@ const clutterAnimationWord = (element) => {
 };
 
 // Lenis js
-const lenis = new Lenis();
-const lenisJs = () => {
-  lenis.on("scroll", (e) => {});
+// const lenis = new Lenis();
+// const lenisJs = () => {
+//   lenis.on("scroll", (e) => {});
 
-  lenis.on("scroll", ScrollTrigger.update);
+//   lenis.on("scroll", ScrollTrigger.update);
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 500);
-  });
+//   gsap.ticker.add((time) => {
+//     lenis.raf(time * 500);
+//   });
 
-  gsap.ticker.lagSmoothing(0);
-};
-lenisJs();
+//   gsap.ticker.lagSmoothing(0);
+// };
+// lenisJs();
 
 window.addEventListener("DOMContentLoaded", () => {
   gsap.to(".main-loader", {
@@ -84,19 +84,19 @@ const menu = () => {
           y: -40,
         });
       } else if (index === 2) {
-        gsap.to(".menu-elem3>h1", {
+        gsap.to(".menu-elem6>h1", {
           y: -40,
         });
       } else if (index === 3) {
-        gsap.to(".menu-elem4>h1", {
+        gsap.to(".menu-elem3>h1", {
           y: -40,
         });
       } else if (index === 4) {
-        gsap.to(".menu-elem5>h1", {
+        gsap.to(".menu-elem4>h1", {
           y: -40,
         });
       } else if (index === 5) {
-        gsap.to(".menu-elem6>h1", {
+        gsap.to(".menu-elem5>h1", {
           y: -40,
         });
       } else if (index === 6) {
@@ -107,7 +107,7 @@ const menu = () => {
         gsap.to(".menu-elem8>h1", {
           y: -40,
         });
-      } else {
+      } else if (index === 8) {
         gsap.to(".menu-elem9>h1", {
           y: -40,
         });
@@ -132,7 +132,6 @@ const menu = () => {
       ".menu-elem>h1",
       {
         opacity: 0,
-
         stagger: 0.1,
         y: 40,
       },
@@ -552,3 +551,18 @@ const allSlidersSwitch = () => {
   });
 };
 allSlidersSwitch();
+
+const announcementAnimation = () => {
+  let top = 0;
+  setInterval(() => {
+    top = top - 5;
+    console.log(top);
+
+    if (top <= -90) {
+      top = 0;
+      document.querySelector(".insights-win-box").style.top = `0%`;
+    }
+    document.querySelector(".insights-win-box").style.top = `${top * 3.5}%`;
+  }, 3000);
+};
+announcementAnimation();

@@ -572,6 +572,10 @@ nav > img {
   cursor: pointer;
 }
 
+.reality-elem1 {
+  height: 8vw;
+}
+
 .reality-elem-heading {
   position: relative;
   width: 100%;
@@ -614,7 +618,7 @@ nav > img {
 .teams {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2vw 10.4vw;
   padding-top: 6vw;
 }
@@ -679,17 +683,19 @@ nav > img {
 
 .teams-right {
   position: relative;
-  height: 50vh;
   margin-top: 2vw;
   width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
   gap: 1vw;
+  flex-wrap: wrap;
 }
 
 .team-img {
   position: relative;
   width: 25vw;
-  height: 100%;
+  margin-top: 2vw;
   object-fit: cover;
 }
 

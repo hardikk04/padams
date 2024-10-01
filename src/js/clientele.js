@@ -111,18 +111,7 @@ menu();
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const brandsAnimation = () => {
-  gsap.from(".brands-img", {
-    scale: 1.5,
-    rotateX: "120deg",
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: ".brands",
-      start: "top 90%",
-      end: "top -60%",
-      scrub: true,
-      // markers: true,
-    },
-  });
+  
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".brands",
@@ -133,6 +122,8 @@ const brandsAnimation = () => {
   });
   tl.from(".brands-img", {
     opacity: 0,
+    scale: 1.5,
+    rotateX: "120deg",
     stagger: 0.1,
   });
 };

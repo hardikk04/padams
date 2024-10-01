@@ -140,8 +140,6 @@ const textFillSection = () => {
 
 textFillSection();
 
-
-
 const codeDrop = () => {
   // Define a variable to store the Lenis smooth scrolling object
   let lenis;
@@ -938,17 +936,17 @@ const realityAnimation = () => {
   const allElems = document.querySelectorAll(".reality-elem");
   allElems.forEach((elem, index) => {
     elem.addEventListener("click", () => {
-      if (flag) {
-        gsap.to(elem, {
-          height: "8vw",
-        });
-        flag = false;
-      } else {
-        gsap.to(elem, {
-          height: "2vw",
-        });
-        flag = true;
-      }
+      allElems.forEach((elem, i) => {
+        if (index === i) {
+          gsap.to(elem, {
+            height: "8vw",
+          });
+        } else {
+          gsap.to(elem, {
+            height: "2vw",
+          });
+        }
+      });
     });
   });
 };
