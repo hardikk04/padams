@@ -14,6 +14,7 @@ html {
   position: relative;
   width: 100%;
 }
+
 /* why us section css   */
 a {
   text-decoration: none !important;
@@ -502,29 +503,7 @@ link-lg {
   flex-flow: column;
   flex-grow: 1;
 }
-@media (min-width: 1200px) {
-  .multi-content-card__item .multi-content-card__item-content {
-    padding-bottom: 24px;
-  }
-}
-@media (min-width: 768px) {
-  .multi-content-card__item .multi-content-card__item-content {
-    padding-bottom: 24px;
-  }
-}
-.multi-content-card__item .multi-content-card__item-content {
-  border-color: #b1b2b4;
-  padding-top: 36px;
-  padding-bottom: 12px;
-}
-@media (min-width: 960px) {
-  .multi-content-card__item-content {
-    flex-grow: 1;
-    display: flex;
-    flex-flow: column;
-    padding: 20px !important;
-  }
-}
+
 .multi-content-card__item * {
   border-color: initial;
 }
@@ -553,26 +532,7 @@ body > div.container-fluid.primary-container {
   animation-name: atNodeInserted54;
   visibility: visible;
 }
-@media (min-width: 1200px) {
-  .type-v2 h4,
-  .type-v2.h4,
-  h4.type-v2 {
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-}
-@media (min-width: 768px) {
-  .type-v2 h4,
-  .type-v2.h4,
-  h4.type-v2 {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-}
+
 .type-v2 h4,
 .type-v2.h4,
 h4.type-v2 {
@@ -584,18 +544,7 @@ h4.type-v2 {
 .multi-content-card__item * {
   border-color: initial;
 }
-@media (min-width: 1200px) {
-  .type-v2 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 768px) {
-  .type-v2 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
+
 .type-v2 {
   font-size: 16px;
   line-height: 22px;
@@ -616,26 +565,7 @@ h4.type-v2 {
 *::after {
   box-sizing: border-box;
 }
-@media (min-width: 1200px) {
-  .type-v2 h4,
-  .type-v2.h4,
-  h4.type-v2 {
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-}
-@media (min-width: 768px) {
-  .type-v2 h4,
-  .type-v2.h4,
-  h4.type-v2 {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 0;
-    font-weight: 600;
-  }
-}
+
 .type-v2 h4,
 .type-v2.h4,
 h4.type-v2 {
@@ -644,18 +574,7 @@ h4.type-v2 {
   letter-spacing: 0;
   font-weight: 600;
 }
-@media (min-width: 1200px) {
-  .type-v2 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 768px) {
-  .type-v2 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
+
 .type-v2 {
   font-size: 16px;
   line-height: 22px;
@@ -783,75 +702,8 @@ form .form-row .input-data {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 700px) {
-  .form-container .text {
-    font-size: 30px;
-  }
-  .form-container form {
-    padding: 10px 0 0 0;
-  }
-  .form-container form .form-row {
-    display: block;
-  }
-  form .form-row .input-data {
-    margin: 35px 0 !important;
-  }
-  .submit-btn .input-data {
-    width: 40% !important;
-  }
-}
 
 /* Media Queries */
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .current-opening-section {
-    grid-template-columns: 1fr;
-  }
-
-  .why-us-section:before {
-    inset: 0 -80% 85% -80%;
-  }
-  .form-container {
-    padding: 20px;
-  }
-  .why-us {
-    padding-top: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .slider-hero-heading {
-    top: 150px;
-  }
-
-  .why-us-card h4 {
-    font-size: 14px;
-  }
-
-  .why-us-card p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-hero-heading {
-    top: 100px;
-  }
-
-  .slider img {
-    height: auto;
-  }
-
-  .current-opening-section2 img {
-    height: 200px;
-  }
-
-  .why-us-section:before {
-    inset: 0 -100% 110% -100%;
-  }
-}
 
 .news-main-container {
   display: grid;
@@ -862,6 +714,7 @@ form .form-row .input-data {
   position: relative;
   width: 100%;
   margin-top: 4vw;
+  padding: 2vw;
 }
 
 .page7-container > h3 {
@@ -1175,6 +1028,12 @@ nav {
 
 .nav-right i {
   font-size: 1.2vw;
+}
+
+@media (min-width: 2000px) {
+  .page7-container-elems {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -217,6 +217,98 @@ nav {
   object-fit: cover;
 }
 
+#page7 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 2vw;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.page7-text > h3 {
+  font-weight: 600;
+}
+
+.page7-text > h1 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.page7-container {
+  position: relative;
+  width: 100%;
+  margin-top: 4vw;
+}
+
+.page7-container > h3 {
+  position: relative;
+  font-weight: 500;
+}
+
+.page7-container > p {
+  position: relative;
+  font-size: 1.2vw;
+  margin-top: 0.5vw;
+  font-weight: 600;
+}
+
+.page7-container-elems {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  height: 45vh;
+  margin-top: 2vw;
+}
+
+.page7-elem {
+  position: relative;
+  padding: 2vw;
+  color: #fff;
+  border-radius: 1vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page7-elem > h1 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.page7-elem > p {
+  font-size: 1vw;
+  width: 14vw;
+  margin-top: 1vw;
+}
+
+.page7-elem1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #217bfe;
+}
+
+.page7-elem2 {
+  position: relative;
+  width: 50%;
+  background-color: #217bfe;
+}
+
+.page7-elem3 {
+  position: relative;
+  width: 50%;
+  background-color: #217bfe;
+}
+
+.page7-elem4 {
+  position: relative;
+  width: 50%;
+  background-color: #217bfe;
+}
+
 .footer {
   position: relative;
   width: 100%;

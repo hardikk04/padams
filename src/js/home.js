@@ -26,20 +26,6 @@ const clutterAnimationWord = (element) => {
   htmlTag.innerHTML = clutter;
 };
 
-// Lenis js
-// const lenis = new Lenis();
-// const lenisJs = () => {
-//   lenis.on("scroll", (e) => {});
-
-//   lenis.on("scroll", ScrollTrigger.update);
-
-//   gsap.ticker.add((time) => {
-//     lenis.raf(time * 500);
-//   });
-
-//   gsap.ticker.lagSmoothing(0);
-// };
-// lenisJs();
 
 window.addEventListener("DOMContentLoaded", () => {
   gsap.to(".main-loader", {
@@ -177,6 +163,18 @@ const textFillSection = () => {
       trigger: ".text-fill",
       start: "top 50%",
       end: "top 0%",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
+  gsap.to(".text-fill:nth-child(2)>h1", {
+    color: "#e73e0d",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".text-fill",
+      start: "top 0%",
+      end: "top -10%",
       scrub: true,
       // markers: true,
     },

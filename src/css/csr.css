@@ -393,6 +393,33 @@ nav {
   margin: 2vw 0;
 }
 
+.csr-gallery {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 2vw;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .nav-right i {
     font-size: 2.2vw;

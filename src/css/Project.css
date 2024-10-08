@@ -206,7 +206,6 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("/images/build.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,9 +225,29 @@
 }
 
 .project-overlay > h1 {
+  position: relative;
   font-weight: 300;
   font-size: 6vw;
   color: #ffffff;
+  z-index: 2;
+}
+
+.project-overlay video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.398);
 }
 
 .menu {
@@ -330,8 +349,20 @@ nav {
 .nav-right {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 1vw;
   cursor: pointer;
+}
+
+.nav-right select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.nav-right option {
+  color: black;
 }
 
 .menu-close {

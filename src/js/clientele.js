@@ -111,7 +111,6 @@ menu();
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const brandsAnimation = () => {
-  
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".brands",
@@ -131,3 +130,24 @@ const brandsAnimation = () => {
 if (!mediaQuery.matches) {
   brandsAnimation();
 }
+
+const page7Animation = () => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: "#page7",
+      start: "top 0%",
+      end: "top -150%",
+      scrub: true,
+      pin: true,
+    },
+  });
+  tl.to(".page7-elem", {
+    width: "24%",
+    stagger: 0.1,
+    backgroundColor: "#e2ffdf",
+    color: "#07003f",
+  });
+};
+
+page7Animation();

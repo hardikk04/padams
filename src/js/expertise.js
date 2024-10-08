@@ -131,16 +131,8 @@ menu();
 
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
-clutterAnimation(".card1>.card-heading>h1");
-
-clutterAnimation(".card2>.card-heading>h1");
-clutterAnimation(".card3>.card-heading>h1");
-clutterAnimation(".card4>.card-heading>h1");
-clutterAnimation(".card5>.card-heading>h1");
-clutterAnimation(".card6>.card-heading>h1");
-
 const cards = () => {
-  gsap.from(".card1>.card-heading>h1>span", {
+  gsap.from(".card1>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -150,7 +142,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card1>.card-img>img", {
@@ -172,11 +163,10 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 
-  gsap.from(".card2>.card-heading>h1>span", {
+  gsap.from(".card2>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -186,7 +176,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card2>.card-img>img", {
@@ -196,7 +185,6 @@ const cards = () => {
       trigger: ".card2",
       start: "top 100%",
       end: "top 0%",
-      scrub: 1,
     },
   });
   gsap.from(".card2>p", {
@@ -208,11 +196,10 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 
-  gsap.from(".card3>.card-heading>h1>span", {
+  gsap.from(".card3>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -222,7 +209,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card3>.card-img>img", {
@@ -232,7 +218,6 @@ const cards = () => {
       trigger: ".card3",
       start: "top 100%",
       end: "top 0%",
-      scrub: 1,
     },
   });
   gsap.from(".card3>p", {
@@ -244,11 +229,10 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 
-  gsap.from(".card4>.card-heading>h1>span", {
+  gsap.from(".card4>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -258,7 +242,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card4>.card-img>img", {
@@ -268,7 +251,6 @@ const cards = () => {
       trigger: ".card4",
       start: "top 100%",
       end: "top 0%",
-      scrub: 1,
     },
   });
   gsap.from(".card4>p", {
@@ -280,11 +262,10 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 
-  gsap.from(".card5>.card-heading>h1>span", {
+  gsap.from(".card5>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -294,7 +275,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card5>.card-img>img", {
@@ -304,7 +284,6 @@ const cards = () => {
       trigger: ".card5",
       start: "top 100%",
       end: "top 0%",
-      scrub: 1,
     },
   });
   gsap.from(".card5>p", {
@@ -316,11 +295,10 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 
-  gsap.from(".card6>.card-heading>h1>span", {
+  gsap.from(".card6>.card-heading>h1", {
     opacity: 0,
     y: 40,
     stagger: 0.1,
@@ -330,7 +308,6 @@ const cards = () => {
       start: "top 80%",
       end: "top 50%",
       // markers: true,
-      scrub: 1,
     },
   });
   gsap.from(".card6>.card-img>img", {
@@ -340,7 +317,6 @@ const cards = () => {
       trigger: ".card6",
       start: "top 100%",
       end: "top 0%",
-      scrub: 1,
     },
   });
   gsap.from(".card6>p", {
@@ -352,7 +328,6 @@ const cards = () => {
       start: "top 20%",
       end: "top -10%",
       // markers: true,
-      scrub: 1,
     },
   });
 };
