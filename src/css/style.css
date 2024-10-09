@@ -1,7 +1,3 @@
-/* Open Sans FONT LINK   */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
   font-family: thinF;
@@ -38,6 +34,7 @@
   src: url("/fonts/Montserrat-Bold.ttf");
 }
 
+
 /* UNIVERSAL CSS STARTS */
 
 * {
@@ -58,7 +55,7 @@
   --color-gray: #282936;
   --color-white: #fff;
   --font-family-heading: regularF;
-  --color-red: #ce4141;
+  --color-red: #e20010;
   --color-light-gray: ##555555;
   --color-text: #000;
   --color-bg: #fff;
@@ -75,6 +72,12 @@
   --outline-width: 0px;
 }
 
+.menu-left .return-home{
+ font-size: 1.2vw; 
+ margin-top: 2vw; 
+ color: #ce4141 !important;
+}
+
 .default-top-margin {
   margin-top: 80px;
 }
@@ -83,12 +86,15 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* UNIVERSAL CSS ENDS */
 
 /* ##################### HEADER VIDEO SECTION CSS STARTS #######################3 */
+
+
+
 
 .header {
   z-index: 999;
@@ -329,6 +335,11 @@ button:hover .button-text {
   }
 }
 
+/* Media Queries */
+
+/* Media queries for smartphone */
+
+
 /* ##################### HEADER VIDEO SECTION CSS ENDS #######################3 */
 
 /* #################### home-about-us CSS STARTS ######################## */
@@ -423,6 +434,7 @@ button:hover .button-text {
   width: 20px;
 }
 
+
 /* #################### home-about-us CSS ENDS ######################## */
 
 .counter-section {
@@ -466,6 +478,8 @@ button:hover .button-text {
   color: var(--color-red);
   transform: scale(1.1);
 }
+
+
 
 .learn-more {
   cursor: url(/images/images__2_-removebg-preview.png), auto;
@@ -628,6 +642,7 @@ button:hover .button-text {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+
 /* expertise section css ends   */
 
 /* clientele-section css starts  */
@@ -690,6 +705,7 @@ button:hover .button-text {
   min-width: 100%;
   animation: scroll-x var(--duration) linear infinite;
 }
+
 
 .marquee--vertical {
   --mask-direction: to bottom;
@@ -1710,7 +1726,7 @@ ul {
 
 /* header  */
 .project-main-header {
-  background: url(/images/Screenshot\ 2024-08-16\ at\ 2.27.44\ PM.png);
+  background: url(/images/Screenshot\ 2024-08-16\ at\ 2.27.44\PM.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1747,10 +1763,12 @@ ul {
 }
 /*  header ends */
 
+
+
 .footer {
   position: relative;
   width: 100%;
-  padding: 2vw 10.4vw;
+  padding: 2vw 2.4vw;
 }
 
 .footer-top {
@@ -1760,11 +1778,13 @@ ul {
   justify-content: space-between;
   align-items: end;
   color: #ce4141;
+  text-transform: lowercase;
 }
 
 .footer-top > img {
-  height: 3vw;
-  object-fit: cover;
+  object-fit: contain;
+  width: 150px;
+  
 }
 
 .footer-top-right {
@@ -1776,7 +1796,8 @@ ul {
 
 .footer-top-right a {
   color: #ce4141;
-  text-decoration: none;
+    text-decoration: none;
+
 }
 
 .footer-top-right i {
@@ -1805,6 +1826,7 @@ ul {
 
 .footer-bottom > p {
   color: #2f2f2f;
+  text-transform: capitalize;
 }
 
 .footer-bottom-right {
@@ -1816,4 +1838,119 @@ ul {
 .footer-bottom a {
   color: #2f2f2f !important;
   text-decoration: none;
+}
+
+
+
+.menu {
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  height: 100vh;
+  width: 40%;
+  padding: 2vw 2.4vw;
+  padding-bottom: 4vw;
+  z-index: 9;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-left a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+.menu-left {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #6d6d6d;
+  padding-top: 4vw;
+}
+
+.menu-elem {
+  height: 2vw;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.menu-elem > h1 {
+  position: relative;
+  font-size: 2vw;
+  line-height: 1;
+  font-weight: 500;
+  /* transition: all ease 0.2s; */
+}
+
+.menu-elem > h1:hover {
+  color: #ce4141;
+}
+
+.menu-right-socials {
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: 4vw;
+}
+
+.menu-right {
+  position: relative;
+  height: 100%;
+  color: #ce4141;
+}
+
+.menu i {
+  cursor: pointer;
+}
+
+.menu i:hover {
+  color: #ce4141;
+}
+
+.menu-right > i {
+  font-size: 2vw;
+}
+
+.media {
+  display: flex;
+  gap: 1vw;
+}
+
+.media i {
+  font-size: 1.4vw;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: 1vw;
+}
+
+.email p {
+  margin-top: 1vw;
+}
+
+.menu a:hover {
+  color: #ce4141;
+}
+
+.email i {
+  font-size: 1vw;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: 1vw;
+}
+
+.menu-right-socials {
+    align-items:baseline !important;
 }
