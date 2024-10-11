@@ -26,7 +26,6 @@ const clutterAnimationWord = (element) => {
   htmlTag.innerHTML = clutter;
 };
 
-
 window.addEventListener("DOMContentLoaded", () => {
   gsap.to(".main-loader", {
     opacity: 0,
@@ -59,11 +58,13 @@ search();
 
 const menu = () => {
   const allMenuElem = document.querySelectorAll(".menu-elem");
+  const { height } = allMenuElem[0].getBoundingClientRect();
+
   allMenuElem.forEach((elem, index) => {
     elem.addEventListener("mouseenter", () => {
       if (index === 0) {
         gsap.to(".menu-elem1>h1", {
-          y: -40,
+          y: -height,
         });
       } else if (index === 1) {
         gsap.to(".menu-elem2>h1", {
