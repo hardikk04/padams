@@ -107,6 +107,18 @@ h4 {
   color: var(--color-red);
 }
 
+h5 {
+  font-size: 1.6vw;
+  line-height: 2.5vw;
+  font-weight: 500;
+}
+
+.head-office{
+  color: var(--color-red);
+}
+.contact-list{
+  margin-top: 2vw;
+}
 span {
   display: block;
 }
@@ -157,6 +169,7 @@ span {
   position: relative;
   width: 100%;
   font-family: regularF;
+  overflow:hidden;
 }
 
 a {
@@ -277,7 +290,7 @@ a {
 }
 
 .menu-elem {
-  height: 2vw;
+  height: 1.9vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1153,6 +1166,7 @@ nav img {
   width: 100%;
   padding: 2.4vw;
   padding-bottom: 1vw;
+  overflow-x:hidden;
 }
 
 .footer-top {
@@ -1570,6 +1584,7 @@ svg {
 
 .project {
   font-family: regularF;
+  overflow-x:hidden;
 }
 
 .nav-right {
@@ -1615,6 +1630,7 @@ svg {
   padding-right: 4vw;
   font-family: regularF;
   padding: 2vw !important;
+  overflow-x:hidden;
 }
 
 
@@ -1646,6 +1662,7 @@ svg {
   align-items: center;
   padding: 2vw;
   display: none;
+  overflow-x:hidden;
 }
 
 .project-filter-btn button {
@@ -1685,6 +1702,7 @@ svg {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-x:hidden;
 }
 
 .img-gallery .swiper {
@@ -2017,6 +2035,7 @@ a {
   position: relative;
   width: 100%;
   font-family: regularF;
+  overflow:hidden;
 }
 
 .inline-block {
@@ -2167,7 +2186,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 2.4vw;
+  padding: 5vw 2.4vw;
+  padding-bottom:0;
   margin-top: 0vw;
 }
 
@@ -2307,6 +2327,7 @@ a {
 /*About us css start*/
 
 
+
 :root {
   font-size: 14px;
   --color-text: #fff;
@@ -2323,6 +2344,7 @@ a {
   position: relative;
   width: 100%;
   font-family: regularF;
+  overflow:hidden;
 }
 
 .cursor-img {
@@ -2351,7 +2373,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -2803,6 +2825,19 @@ a {
   margin-top: 2vw;
   width: 100%;
   height: 100%;
+}
+
+.teams-about-right-top{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:1vw;
+}
+
+.teams-about-right-bottom{
+  position:relative;
+  width:100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2812,6 +2847,7 @@ a {
   gap: 1vw;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  
 }
 
 .team-about-img {
@@ -2854,6 +2890,9 @@ a {
   font-size: .8vw;
 }
 
+.aboutfront{
+  background-position-y: top;
+}
 
 /*About us css end*/
 
@@ -2865,7 +2904,7 @@ a {
   position: relative;
   width: 100%;
   font-family: regularF;
-
+  overflow:hidden;
 }
 
 
@@ -3225,6 +3264,7 @@ a {
   position: relative;
   width: 100%;
   padding: 2vw;
+  overflow-x:hidden;
 }
 
 .csr-3d-text {
@@ -3629,6 +3669,7 @@ table tr td {
   background-repeat: no-repeat;
   overflow: hidden;
   font-family: 'regularF';
+  overflow-x:hidden;
 }
 
 .csr-overlay {
@@ -3673,6 +3714,7 @@ table tr td {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-x:hidden;
 }
 
 .csr-video video {
@@ -3682,6 +3724,7 @@ table tr td {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 
 .csr-dets {
   position: relative;
@@ -3722,7 +3765,7 @@ table tr td {
   position: relative;
   width: 100%;
   padding: 12vw 2vw;
-
+  overflow-x:hidden;
 }
 
 .csr-gallery .swiper {
@@ -3906,6 +3949,7 @@ table tr td {
   /* margin-bottom: 100px; */
   position: relative;
   z-index: 1
+  overflow-x:hidden;
 }
 
 
@@ -4114,7 +4158,7 @@ table tr td {
   position: relative;
   width: 100%;
   font-family: regularF;
-
+  overflow:hidden;
 }
 
 .inline-block {
@@ -4664,6 +4708,9 @@ body #page .small-gear>.tooth {
   align-items: center;
   margin-bottom: 4vw;
   padding: 5vw 2.4vw;
+  overflow-x:hidden;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .page2-contact-map>img {
@@ -5694,6 +5741,7 @@ link-lg {
   -moz-column-gap: 30px;
   column-gap: 30px;
   padding: 2vw;
+  overflow-x:hidden;
 }
 
 .current-opening-section>*:nth-child(1) {
@@ -5724,6 +5772,7 @@ link-lg {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 10px;
   margin-top: 1vw;
+  overflow-x:hidden;
 }
 
 .career-option-desc-section>*:nth-child(1) {
@@ -5759,6 +5808,7 @@ link-lg {
 .career-option-section {
   /* background-color: gainsboro; */
   padding: 2vw;
+  overflow-x:hidden;
 }
 
 .career-option-main-heading {
@@ -8726,6 +8776,7 @@ ul {
   color: #666;
   line-height: 1.6;
   font-size: 1.2vw;
+  padding-bottom:1vw;
 }
 
 .privacy-section h2 {
@@ -8791,6 +8842,7 @@ footer {
 /*    }*/
 
 @media (max-width: 1024px) {
+
 
   h1 {
       font-size: 7vw;
@@ -8880,6 +8932,9 @@ footer {
       width: 100%;
   }
 
+  .privacy-section{
+      margin-top: 13vw;
+  }
 
   .media i {
       font-size: 3.4vw;
@@ -9208,6 +9263,15 @@ footer {
   }
 
   /*About css end*/
+  
+     /*news css end*/
+  
+  .news-overlay>p {
+  font-size: 2.1vw;
+  color: #ffffffbf;
+}
+
+ /*news css end*/
 
   /*Clientele css start*/
 
@@ -9342,18 +9406,31 @@ footer {
       font-size: 7vw;
       font-weight: 500;
   }
+  h5 {
+     font-size: 4.6vw;
+      font-weight: 500; 
+      line-height: 6vw;
+  }
+  .page2-contact-map{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .contact-list {
+  margin-top: 5vw;
+  }
 
   /*Nav css start*/
 
   .menu-left .return-home {
-      font-size: 5vw;
+      font-size: 2vw;
   }
   .email{
-      font-size: 5vw;
+      font-size: 2vw;
       padding-top: 1vw;
   }
   .email i{
-      font-size: 5vw;
+      font-size: 2.2vw;
   }
   .menu {
       height: 100%;
@@ -9436,7 +9513,7 @@ footer {
 
 
   .media i {
-      font-size: 4.2vw;
+      font-size: 2.2vw;
   }
 
   .ri-close-large-fill:before {
@@ -9508,7 +9585,7 @@ footer {
   }
 
   /*Footer css end*/
-
+  
 
   /*Home css start*/
 
@@ -9821,7 +9898,9 @@ footer {
       min-height: 60vh;
       gap: 12vw;
   }
-
+  .privacy-section{
+      margin-top: 15vw;
+  }
   .brand {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10212,6 +10291,15 @@ footer {
   .single-blog-post .single-post-image, .single-post-image img {
       width: 80%;
   }
+  
+     /*news css end*/
+  
+  .news-overlay>p {
+  font-size: 3vw;
+  color: #ffffffbf;
+}
+
+ /*news css end*/
 
   /*News css end*/
 
@@ -10447,7 +10535,16 @@ footer {
       font-size: 4vw;
       line-height: 1.4;
   }
-
+  .email{
+      font-size: 5vw;
+  }
+  .menu-left .return-home {
+      font-size: 5vw;
+  }
+  .email i {
+      font-size: 5vw;
+  }
+  
   .emo-img {
       scale: 4.5;
   }
@@ -10645,7 +10742,7 @@ footer {
 
 
   .page1-home-text button {
-      font-size: 6.1vw;
+      font-size: 4.1vw;
   }
 
   .text-fill {
@@ -10973,7 +11070,7 @@ footer {
 
   .brands-clientele-img {
       height: 14vw;
-      width: 45vw;
+      width: 28vw;
   }
 
   #page7-clientele {
@@ -11119,6 +11216,10 @@ footer {
       font-size: 4vw;
   }
 
+.content__img-inner-about {
+  background-size: contain;
+          background-repeat: no-repeat;
+}
 
   /*About css end*/
 
@@ -11138,7 +11239,7 @@ footer {
 
   .design-clientele-img {
       height: 20vw;
-      width: 33vw;
+      width: 27vw;
   }
 
   .clientele-heading-text {
@@ -11205,6 +11306,11 @@ footer {
   .single-blog-post .single-post-image, .single-post-image img {
       width: 100%;
   }
+  
+      .news-overlay>p {
+  font-size: 4vw;
+  color: #ffffffbf;
+}
 
   /*News css end*/
 
